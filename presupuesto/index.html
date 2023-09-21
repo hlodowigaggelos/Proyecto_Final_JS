@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/Dato.js"></script>
+    <script src="./js/Ingreso.js"></script>
+    <script src="./js/Egreso.js"></script>
+</head>
+<body>
+    <div class="cabecero">
+        <div class="presupuesto">
+            <div class="presupuesto_titulo">
+                <h2>Presupuesto Disponible</h2>
+            </div>
+            <div id = presupuesto class="presupuesto_valor">
+                <h3>2400,00 MXN</h3>
+            </div>
+            <div class="presupuesto_ingreso
+                        limpiarEstilos">
+                <div class="presupuesto_ingreso--texto">
+                    <p>
+                        Ingresos
+                    </p>
+                </div>
+                <div class="derecha">
+                    <div id = ingresos class="presupuesto_ingreso--valor">
+                        <p>
+                            4200,00 MXN
+                        </p>
+                    </div>
+                    <div class="presupuesto_ingreso--porcentaje">
+                        <p>
+                             
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="presupuesto_egreso limpiarEstilos">
+                <div class="presupuesto_egreso--texto">
+                    <p>
+                        Egresos
+                    </p>
+                </div>
+                <div class="derecha limpiarEstilos">
+                    <div id = egresos class="presupuesto_egreso--valor">
+                        <p>
+                            -1900,00 MXN
+                        </p>
+                    </div>
+                    <div id = porcentaje class="presupuesto_egreso--porcentaje">
+                        <p>
+                            45%
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <form action="" id="forma">
+        <div class="agregar">
+            <div class="agregar_contenedor">
+                <select name="" id="tipo" class="agregar_tipo">
+                    <option value="ingreso">
+                        +
+                    </option>
+                    <option value="egreso">
+                        -
+                    </option>
+                </select>
+                <input type="text" id="descripcion" class="agregar_descripcion" placeholder="Agregar Descripcion">
+                <input type="number" id="valor" class="agregar_valor" placeholder="Valor">
+                <button id="boton1" class="agregar_btn" onclick= "agregarDato()"><ion-icon name="checkmark-circle-outline"></ion-icon></button>
+            </div>
+        </div>
+    </form>
+    <div class="contenedor limpiarEstilos">
+        <div id="ingreso_padre" class="ingreso">
+            <h2 class="ingreso_titulo">Ingresos</h2>
+            
+            <!-- <div id="limpiar_estilo" class="elemento limpiarEstilos">
+                <div class="elemento_descripcion">
+                    <p>Venta Coche</p>
+                </div>
+                <div class="derecha limpiarEstilos">
+                    <div class="elemento_valor">
+                        <p>+1500,00</p>
+                    </div>
+                    <div class="elemento_eliminar">
+                        <button class="elemento_eliminar--btn"
+                            onclick="eliminarIngreso()"><ion-icon name="close-circle-outline"></button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="egreso_padre" class="egreso">
+            <h2 class="egreso_titulo">Egresos</h2>
+            <!-- <div id="lista_egresos">
+                <div class="elemento
+                            limpiarEstilos">
+                    <div class="elemento_descripcion">
+                        Renta departamento
+                    </div>
+                    <div class="derecha
+                                limpiarEstilos">
+                        <div class="elemento_valor">
+                            -900,00
+                        </div>
+                        <div class="elemento_porcentaje">
+                            21%
+                        </div>
+                        <div class="elemento_eliminar">
+                            <button id="boton3" class="elemento_eliminar--btn"
+                                    onclick="eliminarIngreso()"><ion-icon name="close-circle-outline"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="elemento
+                            limpiarEstilos">
+                    <div class="elemento_descripcion">
+                        Ropa
+                    </div>
+                    <div class="derecha
+                                limpiarEstilos">
+                        <div class="elemento_valor">
+                            -400,00
+                        </div>
+                        <div class="elemento_porcentaje">
+                            9%
+                        </div>
+                        <div class="elemento_eliminar">
+                            <button id="boton4" class="elemento_eliminar--btn"
+                                    onclick="eliminarIngreso()"><ion-icon name="close-circle-outline"></button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div> -->
+        </div>
+    </div>
+    
+</body>
+</html>
